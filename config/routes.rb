@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get("/hello",{:controller => "pages", :action => "welcome"})
+
+  get("/lucky_numbers",{:controller => "pages", :action => "lucky_numbers"})
+
+   get("/unlucky_numbers",{:controller => "pages", :action => "unlucky_numbers"})
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
